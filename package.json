@@ -1,0 +1,52 @@
+{
+  "name": "geekevening-js2016",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "01": "node examples/01-test-var.js",
+    "01-02": "node examples/01-test-var-02.js",
+    "01-03": "node examples/01-test-var-03.js",
+    "01-04": "node examples/01-test-var-04.js",
+    "01-05": "node examples/01-test-var-05.js",
+
+    "xo": "xo --space examples/*.js | less",
+
+    "02": "node examples/02-template-strings.js",
+
+    "03": "node examples/03-object-destructuring.js",
+    "03-babel": "babel-node examples/03-object-destructuring.js",
+
+    "04": "babel-node examples/04-arrow-functions.js",
+
+    "05": "babel-node examples/05-callback-vs-promise.js",
+    "05-02": "babel-node examples/05-callback-vs-promise-02.js",
+    "05-03": "babel-node examples/05-callback-vs-promise-03.js",
+    "05-04": "babel-node examples/05-callback-vs-promise-04.js",
+
+    "06": "babel-node examples/06-generator-and-async-functions.js",
+    "06-02": "babel-node examples/06-generator-and-async-functions-02.js",
+    "06-03": "babel-node examples/06-generator-and-async-functions-03.js",
+
+    "bonus-es6-modules": "rollup -i examples/bonus-es6-modules/my-entrypoint.js | node",
+    "bonus-testing": "nyc -r text -r html ava examples/bonus-testing/test",
+    "bonus-flow": "flow check examples/bonus-flow/"
+  },
+  "author": "",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2017": "^6.16.0",
+    "co": "^4.6.0",
+    "flow-bin": "^0.35.0",
+    "nyc": "^10.0.0",
+    "rollup": "^0.36.3",
+    "xo": "^0.17.1"
+  }
+}
